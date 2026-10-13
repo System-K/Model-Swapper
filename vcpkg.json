@@ -3,17 +3,17 @@
   "name": "deneme",
   "version-string": "0.1",
   "dependencies": [
-    "simpleini",
-    "spdlog",
+    "directxmath",
+    "directxtk",
+    "fmt",
     "nlohmann-json",
     "rapidcsv",
-    "clib-util"
+    "simpleini",
+    "spdlog",
+    "toml11",
+    "xbyak",
+    "clib-util",
+    "boost-serialization"
   ],
-  "overrides": [
-    {
-      "name": "fmt",
-      "version": "9.1.0"
-    }
-  ],
-  "builtin-baseline": "78b61582c9e093fda56a01ebb654be15a0033897"
+  "builtin-baseline": "e456309491fd875487bf02b8a0dca76c1b1b00cc"
 }

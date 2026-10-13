@@ -8,6 +8,7 @@ vcpkg_from_github(
 )
 
 # Install codes
-set(CLIBUTIL_SOURCE	${SOURCE_PATH}/include/ClibUtil)
-file(INSTALL ${CLIBUTIL_SOURCE} DESTINATION ${CURRENT_PACKAGES_DIR}/include)
+# Linux cross build: upstream folder is "CLIBUtil", consumers include "ClibUtil".
+file(INSTALL ${SOURCE_PATH}/include/CLIBUtil DESTINATION ${CURRENT_PACKAGES_DIR}/include)
+file(CREATE_LINK CLIBUtil ${CURRENT_PACKAGES_DIR}/include/ClibUtil SYMBOLIC)
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")

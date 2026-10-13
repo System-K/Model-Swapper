@@ -1,0 +1,2 @@
+# Linux-only include aliases (Windows resolves these case-insensitively):
+# Logger.h -> include/logger.h; String.h -> the CRT string.h (what MSVC picks, no project String.h exists)
